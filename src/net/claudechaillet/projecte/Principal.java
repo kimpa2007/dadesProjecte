@@ -30,7 +30,7 @@ public class Principal {
 			Elements trJugadors = doc.select("#taul").select("tr");
 			ArrayList<String> usuaris = new ArrayList<String>();
 			
-			for (int i=1; i<100; i++){
+			for (int i=1; i<1000; i++){
 				String linkJugador = trJugadors.get(i).select("td").select("a").attr("href");
 				String nomJugador =  trJugadors.get(i).select("td").get(1).text();
 				String usuari = trJugadors.get(i).select("td").get(0).text().replaceAll(" ", "") ;
